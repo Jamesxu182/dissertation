@@ -1,0 +1,95 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Write your model definitions here
+ */
+
+namespace ie.tcd.network
+
+participant ProviderParticipant identified by providerId {
+  o String providerId
+  o String providerName
+}
+
+participant CarrierParticipant identified by carrierId {
+  o String carrierId
+  o String carrierName
+}
+
+asset SimCardAsset identified by imsi {
+  o String imsi
+  --> CarrierParticipant carrier
+}
+
+asset DataUsageAsset identified by usageId {
+  o String usageId
+  --> SimCardAsset simCard
+  --> ProviderParticipant provider
+  o Double usageValue
+}
+
+transaction AddDataUsageTransaction {
+  o Double addedUsageValue
+  --> SimCardAsset simCard
+  --> ProviderParticipant provider
+}
+
+transaction CreateDataUsageTransaction {
+  o String usageId
+  --> SimCardAsset simCard
+  --> ProviderParticipant provider
+  o Double usageValue
+}
+
+transaction QueryAllDataUsageAssetsTransaction {
+
+}
+
+transaction QueryDataUsageAssetByUsageIdTransaction {
+    o String usageId
+}
+
+transaction QueryDataUsageAssetByProviderAndSimCardTransaction {
+    --> ProviderParticipant provider
+    --> SimCardAsset simCard
+}
+
+transaction QueryDataUsageAssetByProviderTransaction {
+    --> ProviderParticipant provider
+}
+
+transaction QueryDataUsageAssetBySimCardTransaction {
+    --> SimCardAsset simCard
+}
+
+transaction UpdateDataUsageAssetTransaction {
+  --> DataUsageAsset dataUsageAsset
+  o Double newUsageValue
+}
+
+event DataUsageAssetCreatedEvent {
+  --> DataUsageAsset usage
+}
+
+event DataUsageAssetUpdatedEvent {
+  --> DataUsageAsset usage
+  o Double oldUsageValue
+  o Double newUsageValue
+}
+
+event DataUsageAssetQueriedEvent {
+  o Integer length
+  --> DataUsageAsset[] usages optional
+}

@@ -1,0 +1,34 @@
+query selectDataUsageAsset {
+  description: "Select all data usage asset"
+  statement:
+      SELECT ie.tcd.network.DataUsageAsset
+}
+
+
+query selectDataUsageAssetByUsageId {
+  description: "Select data usage asset by specific provider"
+  statement:
+      SELECT ie.tcd.network.DataUsageAsset
+          WHERE (usageId == _$usageId) 
+}
+
+query selectDataUsageAssetByProvider {
+  description: "Select data usage asset by specific provider"
+  statement:
+      SELECT ie.tcd.network.DataUsageAsset
+          WHERE (provider == _$provider) 
+}
+
+query selectDataUsageAssetBySimCard {
+  description: "Select data usage asset by specific sim card"
+  statement:
+      SELECT ie.tcd.network.DataUsageAsset
+          WHERE (simCard == _$simCard)
+}
+
+query selectDataUsageAssetByProviderAndSimCard {
+  description: "Select data usage asset by specific provider and sim card"
+  statement:
+      SELECT ie.tcd.network.DataUsageAsset
+          WHERE (simCard == _$simCard AND provider == _$provider) 
+}
