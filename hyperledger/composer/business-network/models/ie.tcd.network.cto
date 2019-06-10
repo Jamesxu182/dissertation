@@ -85,8 +85,10 @@ event DataUsageAssetCreatedEvent {
 
 event DataUsageAssetUpdatedEvent {
   --> DataUsageAsset usage
-  o Double oldUsageValue
-  o Double newUsageValue
+}
+
+event DataUsageAssetAddedEvent {
+  --> DataUsageAsset usage
 }
 
 event DataUsageAssetQueriedEvent {

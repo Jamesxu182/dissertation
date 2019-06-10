@@ -1,0 +1,20 @@
+{
+  "name": "ipc-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yifan Xu",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.0.1",
+    "async-lock": "^1.2.0",
+    "composer-client": "^0.20.8",
+    "node-ipc": "^9.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}

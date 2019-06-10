@@ -36,24 +36,62 @@ const carrierParticipantNS = namespace + '.' + carrierParticipantType;
  * @transaction
  */
 async function addDataUsageTransaction(tx) {
-    let results = await query('selectDataUsageAssetByProviderAndSimCard', { provider: 'resource:' + tx.provider.getFullyQualifiedIdentifier(), simCard: 'resource:' + tx.simCard.getFullyQualifiedIdentifier() });
+    // let results = await query('selectDataUsageAssetByProviderAndSimCard', { provider: 'resource:' + tx.provider.getFullyQualifiedIdentifier(), simCard: 'resource:' + tx.simCard.getFullyQualifiedIdentifier() });
 
-    const dataUsageAssetRegistry = await getAssetRegistry(dataUsageAssetNS);
+    // const dataUsageAssetRegistry = await getAssetRegistry(dataUsageAssetNS);
 
-    if(results.length < 1) {
-        let usageId = tx.simCard.imsi + '_' + tx.provider.providerId;
-        let newUsage = getFactory().newResource('ie.tcd.network', 'DataUsageAsset', usageId);
-        newUsage.simCard = tx.simCard;
-        newUsage.provider = tx.provider;
-        newUsage.usageValue = tx.addedUsageValue;
+    // if(results.length < 1) {
+    // let usageId = tx.simCard.imsi + '_' + tx.provider.providerId;
+    // let newUsage = getFactory().newResource('ie.tcd.network', 'DataUsageAsset', usageId);
+    // newUsage.simCard = tx.simCard;
+    // newUsage.provider = tx.provider;
+    // newUsage.usageValue = tx.addedUsageValue;
 
-        await dataUsageAssetRegistry.add(newUsage);
-    } else {
-        let existingUsage = results[0];
-        existingUsage.usageValue += tx.addedUsageValue;
+    // await dataUsageAssetRegistry.add(newUsage);
+    // } else {
+    // let existingUsage = results[0];
+    // existingUsage.usageValue += tx.addedUsageValue;
 
-        await dataUsageAssetRegistry.update(existingUsage);
-    }
+    // await dataUsageAssetRegistry.update(existingUsage);
+    // }
+
+    // let dataUsageAssetAddedEvent = getFactory().newEvent('ie.tcd.network', 'DataUsageAssetAddedEvent');
+    // dataUsageAssetAddedEvent.usage = newUsage;
+    // emit(dataUsageAssetAddedEvent);
+
+
+    return query('selectDataUsageAssetByProviderAndSimCard', { provider: 'resource:' + tx.provider.getFullyQualifiedIdentifier(), simCard: 'resource:' + tx.simCard.getFullyQualifiedIdentifier() }).then((results) => {
+        return getAssetRegistry(dataUsageAssetNS).then((dataUsageAssetRegistry) => {
+            if(results.length < 1) {
+                let usageId = tx.simCard.imsi + '_' + tx.provider.providerId;
+                let newUsage = getFactory().newResource('ie.tcd.network', 'DataUsageAsset', usageId);
+                newUsage.simCard = tx.simCard;
+                newUsage.provider = tx.provider;
+                newUsage.usageValue = tx.addedUsageValue;
+                return dataUsageAssetRegistry.add(newUsage).then(() => {
+                    let dataUsageAssetAddedEvent = getFactory().newEvent('ie.tcd.network', 'DataUsageAssetAddedEvent');
+                    dataUsageAssetAddedEvent.usage = newUsage;
+                    emit(dataUsageAssetAddedEvent);
+                    return 0;
+                }).catch((error) => {
+                    console.error(error);
+                });
+            } else {
+                let existingUsage = results[0];
+                existingUsage.usageValue += tx.addedUsageValue;
+                return dataUsageAssetRegistry.update(existingUsage).then(() => {
+                    let dataUsageAssetAddedEvent = getFactory().newEvent('ie.tcd.network', 'DataUsageAssetAddedEvent');
+                    dataUsageAssetAddedEvent.usage = existingUsage;
+                    emit(dataUsageAssetAddedEvent);
+                    return 0;
+                }).catch((error) => {
+                    console.error(error);
+                });
+            }
+        });
+    }).catch((error) => {
+        console.error(error);
+    });
 }
 
 /**
