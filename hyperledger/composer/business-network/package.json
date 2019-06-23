@@ -3,7 +3,7 @@
     "composer": "^0.20.8"
   },
   "name": "business-network",
-  "version": "0.0.55",
+  "version": "0.0.58",
   "description": "business-network",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/$npm_package_name@$npm_package_version.bna",

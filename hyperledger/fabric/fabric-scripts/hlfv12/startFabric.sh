@@ -56,13 +56,13 @@ else
     DOCKER_FILE="${DIR}"/composer/docker-compose.yml
 fi
 
-docker-compose -f "${DOCKER_FILE}" down
-docker-compose -f "${DOCKER_FILE}" up -d
+# docker-compose -f "${DOCKER_FILE}" down
+# docker-compose -f "${DOCKER_FILE}" up -d
 
 # wait for Hyperledger Fabric to start
 # incase of errors when running later commands, issue export FABRIC_START_TIMEOUT=<larger number>
-echo "sleeping for ${FABRIC_START_TIMEOUT} seconds to wait for fabric to complete start up"
-sleep ${FABRIC_START_TIMEOUT}
+# echo "sleeping for ${FABRIC_START_TIMEOUT} seconds to wait for fabric to complete start up"
+# sleep ${FABRIC_START_TIMEOUT}
 
 # Create the channel
 docker exec peer0.org1.example.com peer channel create -o orderer.example.com:7050 -c composerchannel -f /etc/hyperledger/configtx/composer-channel.tx
