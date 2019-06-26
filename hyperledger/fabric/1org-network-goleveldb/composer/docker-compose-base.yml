@@ -1,0 +1,51 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '2'
+
+services:
+  ca:
+    image: hyperledger/fabric-ca
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.org1.example.com
+    ports:
+      - 7054
+
+  orderer:
+    image: hyperledger/fabric-orderer
+    environment:
+      - ORDERER_GENERAL_LOGLEVEL=debug
+      - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+      - ORDERER_GENERAL_GENESISMETHOD=file
+      - ORDERER_GENERAL_GENESISFILE=/etc/hyperledger/configtx/composer-genesis.block
+      - ORDERER_GENERAL_LOCALMSPID=OrdererMSP
+      - ORDERER_GENERAL_LOCALMSPDIR=/etc/hyperledger/msp/orderer/msp
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric
+    volumes:
+        - ./:/etc/hyperledger/configtx
+    command: orderer
+    ports:
+      - '7050'
+
+  couchdb:
+    image: hyperledger/fabric-couchdb
+
+  peer:
+    image: hyperledger/fabric-peer
+    environment:
+      - CORE_LOGGING_LEVEL=debug
+      - CORE_CHAINCODE_LOGGING_LEVEL=DEBUG
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=composer_default
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric
+    command: peer node start
+    volumes:
+      - /var/run/:/host/var/run/
+      - ./:/etc/hyperledger/configtx
+    command: peer node start
+    ports:
+      - '7051'
+      - '7053'

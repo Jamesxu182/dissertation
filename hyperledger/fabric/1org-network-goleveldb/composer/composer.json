@@ -2,8 +2,8 @@
   "caliper": {
     "blockchain": "composer",
     "command" : {
-      "start": "docker-compose -f ../fabric/1org-kafka-network/composer/docker-compose.yml up -d;sleep 10s",
-      "end": "docker-compose -f ../fabric/1org-kafka-network/composer/docker-compose.yml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq)"
+      "start": "docker-compose -f ../fabric/1org-network-goleveldb/composer/docker-compose.yml up -d;sleep 3s",
+      "end": "docker-compose -f ../fabric/1org-network-goleveldb/composer/docker-compose.yml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq)"
     }
   },
   "composer": {
@@ -11,33 +11,19 @@
       {"id": "basic-sample-network", "version": "0.1.0", "path": "src/contract/composer", "orgs": ["Org1"], "loglevel": "INFO"},
       {"id": "vehicle-lifecycle-network", "version": "0.1.0", "path": "src/contract/composer", "orgs": ["Org1"], "loglevel": "INFO"}
     ],
-    "cryptodir": "../fabric/1org-kafka-network/composer/crypto-config",
+    "cryptodir": "../fabric/1org-network-goleveldb/composer/crypto-config",
     "network": {
       "x-type" : "hlfv1",
       "timeout": 3000,
       "version": "1.0.0",
       "tls": false,
       "orderers": {
-        "orderer0.example.com": {
+        "orderer.example.com": {
           "url": "grpc://localhost:7050",
           "mspid": "OrdererMSP",
           "mspconfig": "/etc/hyperledger/msp/orderer/tls/ca.crt",
-          "hostname": "orderer0.example.com",
-          "hosturl": "orderer0.example.com:7050"
-        },
-        "orderer1.example.com": {
-          "url": "grpc://localhost:8050",
-          "mspid": "OrdererMSP",
-          "mspconfig": "/etc/hyperledger/msp/orderer/tls/ca.crt",
-          "hostname": "orderer1.example.com",
-          "hosturl": "orderer1.example.com:7050"
-        },
-        "orderer2.example.com": {
-          "url": "grpc://localhost:9050",
-          "mspid": "OrdererMSP",
-          "mspconfig": "/etc/hyperledger/msp/orderer/tls/ca.crt",
-          "hostname": "orderer2.example.com",
-          "hosturl": "orderer2.example.com:7050"
+          "hostname": "orderer.example.com",
+          "hosturl": "orderer.example.com:7050"
         }
       },
       "certificateAuthorities": {
@@ -51,8 +37,8 @@
           "name": "Org1",
           "mspid": "Org1MSP",
           "mspconfig": "/etc/hyperledger/msp/users/Admin@org1.example.com/msp",
-          "adminCert": "../fabric/1org-kafka-network/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem",
-          "adminKey" : "../fabric/1org-kafka-network/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/db2f0b3081b60e188c5555468fb0bb195de57bceccb8cb7435c87aa2099b62b9_sk",
+          "adminCert": "../fabric/1org-network-goleveldb/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem",
+          "adminKey" : "../fabric/1org-network-goleveldb/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/595c3f8c717211a590148b35f034ce8e8864321f80f7808122fc5b5baa899742_sk",
           "certificateAuthorities": [
             "ca.org1.example.com"
           ],
@@ -76,7 +62,7 @@
           "config": "/etc/hyperledger/configtx/composer-channel.tx",
           "mspconfig": "/etc/hyperledger/msp/users/Admin@org1.example.com/msp",
           "orderers": [
-            "orderer0.example.com"
+            "orderer.example.com"
           ],
           "peers": [
             "peer0.org1.example.com"

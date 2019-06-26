@@ -1,0 +1,102 @@
+version: '2'
+
+services:
+  ca.org1.example.com:
+    extends:
+      file: docker-compose-base.yml
+      service: ca
+    container_name: ca.org1.example.com
+    ports:
+      - "7054:7054"
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/f64e45ab9c64c821d6696ed8413d0a3c0393594ff56ba3fde55e0d705b7e38df_sk -b admin:adminpw -d'
+    volumes:
+      - ./crypto-config/peerOrganizations/org1.example.com/ca/:/etc/hyperledger/fabric-ca-server-config
+
+  ca.org2.example.com:
+    extends:
+      file: docker-compose-base.yml
+      service: ca
+    container_name: ca.org2.example.com
+    ports:
+      - "8054:7054"
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org2.example.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/18e49db70274d820848ce01bf059f3999303ba3f6249b3b84ea0127de2cfa7b3_sk -b admin:adminpw -d'
+    volumes:
+      - ./crypto-config/peerOrganizations/org2.example.com/ca/:/etc/hyperledger/fabric-ca-server-config
+
+  ca.org3.example.com:
+    extends:
+      file: docker-compose-base.yml
+      service: ca
+    container_name: ca.org3.example.com
+    ports:
+      - "9054:7054"
+    command: sh -c 'fabric-ca-server start --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.org3.example.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/183014f30a7c36b2ca77b000e5baaa46e2752d8bcbebd96fe5ff41901a5f0ee7_sk -b admin:adminpw -d'
+    volumes:
+      - ./crypto-config/peerOrganizations/org3.example.com/ca/:/etc/hyperledger/fabric-ca-server-config
+
+  orderer.example.com:
+    extends:
+      file: docker-compose-base.yml
+      service: orderer
+    container_name: orderer.example.com
+    ports:
+      - 7050:7050
+    volumes:
+        - ./crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp:/etc/hyperledger/msp/orderer/msp
+
+  peer0.org1.example.com:
+    extends:
+      file: docker-compose-base.yml
+      service: peer
+    container_name: peer0.org1.example.com
+    environment:
+      - CORE_PEER_ID=peer0.org1.example.com
+      - CORE_PEER_ADDRESS=peer0.org1.example.com:7051
+      - CORE_PEER_LOCALMSPID=Org1MSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
+    ports:
+      - 7051:7051
+      - 7053:7053
+    volumes:
+        - ./crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp:/etc/hyperledger/peer/msp
+        - ./crypto-config/peerOrganizations/org1.example.com/users:/etc/hyperledger/msp/users
+    depends_on:
+      - orderer.example.com
+
+  peer0.org2.example.com:
+    extends:
+      file: docker-compose-base.yml
+      service: peer
+    container_name: peer0.org2.example.com
+    environment:
+      - CORE_PEER_ID=peer0.org2.example.com
+      - CORE_PEER_ADDRESS=peer0.org2.example.com:7051
+      - CORE_PEER_LOCALMSPID=Org2MSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
+    ports:
+      - 8051:7051
+      - 8053:7053
+    volumes:
+        - ./crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/msp:/etc/hyperledger/peer/msp
+        - ./crypto-config/peerOrganizations/org2.example.com/users:/etc/hyperledger/msp/users
+    depends_on:
+      - orderer.example.com
+
+  peer0.org3.example.com:
+    extends:
+      file: docker-compose-base.yml
+      service: peer
+    container_name: peer0.org3.example.com
+    environment:
+      - CORE_PEER_ID=peer0.org3.example.com
+      - CORE_PEER_ADDRESS=peer0.org3.example.com:7051
+      - CORE_PEER_LOCALMSPID=Org3MSP
+      - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
+    ports:
+      - 9051:7051
+      - 9053:7053
+    volumes:
+        - ./crypto-config/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/msp:/etc/hyperledger/peer/msp
+        - ./crypto-config/peerOrganizations/org3.example.com/users:/etc/hyperledger/msp/users
+    depends_on:
+      - orderer.example.com

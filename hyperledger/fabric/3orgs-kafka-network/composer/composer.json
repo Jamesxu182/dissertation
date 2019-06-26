@@ -1,0 +1,146 @@
+{
+  "caliper": {
+    "blockchain": "composer",
+    "command" : {
+      "start": "docker-compose -f ../fabric/3orgs-kafka-network/composer/docker-compose.yml up -d;sleep 10s",
+      "end": "docker-compose -f ../fabric/3orgs-kafka-network/composer/docker-compose.yml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq)"
+    }
+  },
+  "composer": {
+    "chaincodes": [
+      {"id": "basic-sample-network", "version": "0.1.0", "path": "src/contract/composer", "orgs": ["Org1", "Org2", "Org3"], "loglevel": "INFO"},
+      {"id": "vehicle-lifecycle-network", "version": "0.1.0", "path": "src/contract/composer", "orgs": ["Org1", "Org2", "Org3"], "loglevel": "INFO"}
+    ],
+    "cryptodir": "../fabric/3orgs-kafka-network/composer/crypto-config",
+    "network": {
+      "x-type" : "hlfv1",
+      "timeout": 3000,
+      "version": "1.0.0",
+      "tls": false,
+      "orderers": {
+        "orderer0.example.com": {
+          "url": "grpc://localhost:7050",
+          "mspid": "OrdererMSP",
+          "mspconfig": "/etc/hyperledger/msp/orderer/tls/ca.crt",
+          "hostname": "orderer0.example.com",
+          "hosturl": "orderer0.example.com:7050"
+        },
+        "orderer1.example.com": {
+          "url": "grpc://localhost:8050",
+          "mspid": "OrdererMSP",
+          "mspconfig": "/etc/hyperledger/msp/orderer/tls/ca.crt",
+          "hostname": "orderer1.example.com",
+          "hosturl": "orderer1.example.com:7050"
+        },
+        "orderer2.example.com": {
+          "url": "grpc://localhost:9050",
+          "mspid": "OrdererMSP",
+          "mspconfig": "/etc/hyperledger/msp/orderer/tls/ca.crt",
+          "hostname": "orderer2.example.com",
+          "hosturl": "orderer2.example.com:7050"
+        }
+      },
+      "certificateAuthorities": {
+        "ca.org1.example.com": {
+          "url": "http://localhost:7054",
+          "name": "ca.org1.example.com"
+        },
+        "ca.org2.example.com": {
+          "url": "http://localhost:8054",
+          "name": "ca.org2.example.com"
+        },
+        "ca.org3.example.com": {
+          "url": "http://localhost:9054",
+          "name": "ca.org3.example.com"
+        }
+      },
+      "organizations": [
+        {
+          "name": "Org1",
+          "mspid": "Org1MSP",
+          "mspconfig": "/etc/hyperledger/msp/users/Admin@org1.example.com/msp",
+          "adminCert": "../fabric/3orgs-kafka-network/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem",
+          "adminKey" : "../fabric/3orgs-kafka-network/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/46d0ae5f7d6048d1f435d6cfb19157a6c37051a72c86348208e31df808e93002_sk",
+          "certificateAuthorities": [
+            "ca.org1.example.com"
+          ],
+          "peers": [
+            "peer0.org1.example.com"
+          ]
+        },
+        {
+          "name": "Org2",
+          "mspid": "Org2MSP",
+          "mspconfig": "/etc/hyperledger/msp/users/Admin@org2.example.com/msp",
+          "adminCert": "../fabric/3orgs-kafka-network/composer/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts/Admin@org2.example.com-cert.pem",
+          "adminKey" : "../fabric/3orgs-kafka-network/composer/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore/87f182af8d5e09d464947a254046e7e1019fc9030099039490e62f633aee4c4f_sk",
+          "certificateAuthorities": [
+            "ca.org2.example.com"
+          ],
+          "peers": [
+            "peer0.org2.example.com"
+          ]
+        },
+        {
+          "name": "Org3",
+          "mspid": "Org3MSP",
+          "mspconfig": "/etc/hyperledger/msp/users/Admin@org3.example.com/msp",
+          "adminCert": "../fabric/3orgs-kafka-network/composer/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/signcerts/Admin@org3.example.com-cert.pem",
+          "adminKey" : "../fabric/3orgs-kafka-network/composer/crypto-config/peerOrganizations/org3.example.com/users/Admin@org3.example.com/msp/keystore/df7ea969b4f0e81714935c06ce3a48ff3832a05c0c6e287aaba371e4ce3226df_sk",
+          "certificateAuthorities": [
+            "ca.org3.example.com"
+          ],
+          "peers": [
+            "peer0.org3.example.com"
+          ]
+        }
+      ],
+      "peers": {
+        "peer0.org1.example.com": {
+          "url": "grpc://localhost:7051",
+          "eventUrl": "grpc://localhost:7053",
+          "hostname": "peer0.org1.example.com",
+          "channels":[
+            "composerchannel"
+          ]
+        },
+        "peer0.org2.example.com": {
+          "url": "grpc://localhost:8051",
+          "eventUrl": "grpc://localhost:8053",
+          "hostname": "peer0.org2.example.com",
+          "channels":[
+            "composerchannel"
+          ]
+        },
+        "peer0.org3.example.com": {
+          "url": "grpc://localhost:9051",
+          "eventUrl": "grpc://localhost:9053",
+          "hostname": "peer0.org3.example.com",
+          "channels":[
+            "composerchannel"
+          ]
+        }
+      },
+      "channels": {
+        "composerchannel": {
+          "config": "/etc/hyperledger/configtx/composer-channel.tx",
+          "mspconfig": "/etc/hyperledger/msp/users/Admin@org1.example.com/msp",
+          "orderers": [
+            "orderer0.example.com"
+          ],
+          "peers": [
+            "peer0.org1.example.com",
+            "peer0.org2.example.com",
+            "peer0.org3.example.com"
+          ]
+        }
+      }
+    }
+  },
+  "info" : {
+    "Version": "1.4.1",
+    "Size": "3 Orgs with 3 Peer",
+    "Orderer": "Kafka",
+    "Distribution": "Single Host"
+  }
+}
