@@ -1,0 +1,500 @@
+2019-06-25T17:32:00+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T17:32:00+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T17:32:00+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f network/fabric-v1.3/2org1peercouchdb/docker-compose.yaml up -d;sleep 3s 
+
+2019-06-25T17:32:06+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T17:32:10+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T17:33:13+00:00 - INFO [composer.js]: Composer deployment complete 
+
+2019-06-25T17:33:13+00:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2019-06-25T17:33:13+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T17:33:13+00:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2019-06-25T17:33:13+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T17:33:13+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T17:33:14+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":5}},"trim":0,"args":{"testAssets":25},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":25,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T17:33:14+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T17:33:14+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T17:33:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:14+00:00 - INFO [local-client.js]: Info: client 6472 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T17:33:14+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":5}}
+
+2019-06-25T17:33:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 5 Succ: 4 Fail:0 Unfinished:1 
+
+2019-06-25T17:33:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 10 Succ: 8 Fail:0 Unfinished:2 
+
+2019-06-25T17:33:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 15 Succ: 14 Fail:0 Unfinished:1 
+
+2019-06-25T17:33:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 20 Succ: 18 Fail:0 Unfinished:2 
+
+2019-06-25T17:33:20+00:00 - DEBUG [report-builder]: r.create.max: 1561484000.219 r.create.min: 1561483995.419 r.final.max: 1561484000.522 r.final.min: 1561483995.739 r.final.last: 1561484000.522 
+
+2019-06-25T17:33:20+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 4.9 
+
+2019-06-25T17:33:20+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 25 
+
+2019-06-25T17:33:20+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T17:33:20+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T17:33:20+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T17:33:20+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 25   | 0    | 5.2 tps   | 0.32 s      | 0.10 s      | 0.21 s      | 4.9 tps    |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T17:33:20+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T17:33:20+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 100.7MB     | 100.7MB     | 0.00%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 95.2MB      | 92.1MB      | 21.65%   | 16.82%   | 130.4KB    | 108.7KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 321.3MB     | 317.9MB     | 14.51%   | 13.48%   | 546.4KB    | 1.7MB       | 0B        | 368.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 17.6MB      | 17.6MB      | 2.68%    | 2.53%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 120.0MB     | 120.0MB     | 0.57%    | 0.49%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 131.9MB     | 131.0MB     | 35.90%   | 30.72%   | 167.0KB    | 251.4KB     | 4.0KB     | 312.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 11.2MB      | 11.2MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 29.6MB      | 29.5MB      | 2.47%    | 1.81%    | 129.4KB    | 161.6KB     | 0B        | 228.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 26.2MB      | 26.2MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T17:33:20+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T17:33:20+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T17:33:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:25+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T17:33:25+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T17:33:25+00:00 - INFO [defaultTest]: ------ Test round 2 ------ 
+
+2019-06-25T17:33:25+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T17:33:25+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":10}},"trim":0,"args":{"testAssets":50},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":50,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":2,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T17:33:25+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T17:33:25+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T17:33:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:25+00:00 - INFO [local-client.js]: Info: client 6472 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T17:33:25+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#2
+	{"type":"fixed-rate","opts":{"tps":10}}
+
+2019-06-25T17:33:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 27 Succ: 25 Fail:0 Unfinished:2 
+
+2019-06-25T17:33:28+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 37 Succ: 34 Fail:0 Unfinished:3 
+
+2019-06-25T17:33:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 47 Succ: 46 Fail:0 Unfinished:1 
+
+2019-06-25T17:33:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 57 Succ: 55 Fail:0 Unfinished:2 
+
+2019-06-25T17:33:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 67 Succ: 64 Fail:0 Unfinished:3 
+
+2019-06-25T17:33:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 75 Succ: 75 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:32+00:00 - DEBUG [report-builder]: r.create.max: 1561484012.54 r.create.min: 1561484007.639 r.final.max: 1561484012.755 r.final.min: 1561484007.95 r.final.last: 1561484012.755 
+
+2019-06-25T17:33:32+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 9.8 
+
+2019-06-25T17:33:32+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 50 
+
+2019-06-25T17:33:32+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T17:33:32+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T17:33:32+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T17:33:32+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 50   | 0    | 10.2 tps  | 0.34 s      | 0.10 s      | 0.22 s      | 9.8 tps    |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T17:33:32+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T17:33:32+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 100.9MB     | 81.6MB      | 9.48%    | 2.02%    | 140B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 101.1MB     | 95.7MB      | 59.41%   | 18.98%   | 756.2KB    | 566.7KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 383.1MB     | 336.3MB     | 42.92%   | 16.67%   | 2.4MB      | 6.4MB       | 0B        | 1.1MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 17.7MB      | 17.6MB      | 2.71%    | 2.50%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 120.1MB     | 120.0MB     | 0.57%    | 0.43%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 136.1MB     | 132.6MB     | 87.05%   | 35.69%   | 683.1KB    | 1.2MB       | 4.0KB     | 1004.0KB   |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 11.2MB      | 11.2MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 30.6MB      | 29.7MB      | 4.98%    | 1.84%    | 475.5KB    | 532.9KB     | 0B        | 712.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 26.2MB      | 26.2MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T17:33:32+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T17:33:32+00:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2019-06-25T17:33:32+00:00 - INFO [report-builder]: ###all test results:### 
+
+2019-06-25T17:33:32+00:00 - INFO [report-builder]: 
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | basic-sample-network | 25   | 0    | 5.2 tps   | 0.32 s      | 0.10 s      | 0.21 s      | 4.9 tps    |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | basic-sample-network | 50   | 0    | 10.2 tps  | 0.34 s      | 0.10 s      | 0.22 s      | 9.8 tps    |
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T17:33:32+00:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2019-06-25T17:33:32+00:00 - INFO [monitor.js]: 
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 100.9MB     | 9.48%    | 140B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 101.1MB     | 59.41%   | 756.2KB    | 566.7KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 383.1MB     | 42.92%   | 2.4MB      | 6.4MB       | 0B        | 1.1MB      |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 17.7MB      | 2.71%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 120.1MB     | 0.57%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 136.1MB     | 87.05%   | 683.1KB    | 1.2MB       | 4.0KB     | 1004.0KB   |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 11.2MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 30.6MB      | 4.98%    | 475.5KB    | 532.9KB     | 0B        | 712.0KB    |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 26.2MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T17:33:33+00:00 - INFO [caliper-flow]: Generated report with path /home/james/Git/dissertation/hyperledger/caliper/report-20190625T173333.html 
+
+2019-06-25T17:33:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 75 Succ: 75 Fail:0 Unfinished:0 
+
+2019-06-25T17:33:33+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f network/fabric-v1.3/2org1peercouchdb/docker-compose.yaml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq);docker rmi $(docker images dev-* -q) 
+
+2019-06-25T17:33:33+00:00 - INFO [client-util.js]: Client exited  
+
+2019-06-25T17:33:44+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 2 succeeded, 1 failed #
+#######################################
+ 
+
+2019-06-25T17:45:26+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T17:45:26+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T17:45:26+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f network/fabric-v1.3/2org1peercouchdb/docker-compose.yaml up -d;sleep 3s 
+
+2019-06-25T17:45:31+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T17:45:35+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T17:46:58+00:00 - INFO [composer.js]: Composer deployment complete 
+
+2019-06-25T17:46:58+00:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2019-06-25T17:46:58+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T17:46:58+00:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2019-06-25T17:46:58+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T17:46:59+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T17:46:59+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":25}},"trim":0,"args":{"testAssets":25},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":25,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T17:46:59+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T17:46:59+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T17:46:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:00+00:00 - INFO [local-client.js]: Info: client 14571 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T17:47:00+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":25}}
+
+2019-06-25T17:47:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:01+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:02+00:00 - DEBUG [report-builder]: r.create.max: 1561484821.717 r.create.min: 1561484820.756 r.final.max: 1561484821.91 r.final.min: 1561484821.094 r.final.last: 1561484821.91 
+
+2019-06-25T17:47:02+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 21.7 
+
+2019-06-25T17:47:02+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 25 
+
+2019-06-25T17:47:02+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T17:47:02+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T17:47:02+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T17:47:02+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 25   | 0    | 26.0 tps  | 0.34 s      | 0.09 s      | 0.22 s      | 21.7 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T17:47:02+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T17:47:02+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 101.4MB     | 101.4MB     | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 65.1MB      | 65.1MB      | 22.89%   | 22.89%   | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 36.7MB      | 36.7MB      | 2.64%    | 2.64%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 417.8MB     | 417.8MB     | 13.37%   | 13.37%   | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.7MB      | 10.7MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 116.8MB     | 116.8MB     | 27.91%   | 27.91%   | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 108.2MB     | 108.2MB     | 0.69%    | 0.69%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 16.8MB      | 16.8MB      | 0.70%    | 0.70%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.6MB      | 10.6MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T17:47:02+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T17:47:02+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T17:47:02+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:07+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T17:47:07+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T17:47:07+00:00 - INFO [defaultTest]: ------ Test round 2 ------ 
+
+2019-06-25T17:47:07+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T17:47:07+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"testAssets":50},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":50,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":2,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T17:47:07+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T17:47:07+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T17:47:07+00:00 - INFO [local-client.js]: Info: client 14571 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T17:47:07+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#2
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-06-25T17:47:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 25 Succ: 25 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 26 Succ: 25 Fail:0 Unfinished:1 
+
+2019-06-25T17:47:10+00:00 - DEBUG [report-builder]: r.create.max: 1561484830.102 r.create.min: 1561484829.121 r.final.max: 1561484830.17 r.final.min: 1561484829.391 r.final.last: 1561484830.17 
+
+2019-06-25T17:47:10+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 47.7 
+
+2019-06-25T17:47:10+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 50 
+
+2019-06-25T17:47:10+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T17:47:10+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T17:47:10+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T17:47:10+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 50   | 0    | 51.0 tps  | 0.27 s      | 0.06 s      | 0.17 s      | 47.7 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T17:47:10+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T17:47:10+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 101.4MB     | 88.0MB      | 13.07%   | 2.62%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 72.6MB      | 69.9MB      | 58.73%   | 17.30%   | 458.1KB    | 316.3KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 36.7MB      | 36.7MB      | 2.77%    | 2.55%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 419.9MB     | 419.0MB     | 44.25%   | 14.21%   | 1.3MB      | 2.8MB       | 0B        | 336.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.7MB      | 10.7MB      | 0.00%    | 0.00%    | 84B        | 84B         | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 119.2MB     | 118.5MB     | 87.81%   | 27.03%   | 337.8KB    | 669.0KB     | 0B        | 276.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 108.3MB     | 108.2MB     | 2.71%    | 1.05%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 17.9MB      | 17.7MB      | 1.06%    | 0.50%    | 179.5KB    | 206.9KB     | 0B        | 240.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.6MB      | 10.6MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T17:47:10+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T17:47:10+00:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2019-06-25T17:47:10+00:00 - INFO [report-builder]: ###all test results:### 
+
+2019-06-25T17:47:10+00:00 - INFO [report-builder]: 
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | basic-sample-network | 25   | 0    | 26.0 tps  | 0.34 s      | 0.09 s      | 0.22 s      | 21.7 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | basic-sample-network | 50   | 0    | 51.0 tps  | 0.27 s      | 0.06 s      | 0.17 s      | 47.7 tps   |
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T17:47:10+00:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2019-06-25T17:47:10+00:00 - INFO [monitor.js]: 
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 101.4MB     | 13.07%   | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 72.6MB      | 58.73%   | 458.1KB    | 316.3KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 36.7MB      | 2.77%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 419.9MB     | 44.25%   | 1.3MB      | 2.8MB       | 0B        | 336.0KB    |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.7MB      | 0.00%    | 84B        | 84B         | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 119.2MB     | 87.81%   | 337.8KB    | 669.0KB     | 0B        | 276.0KB    |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 108.3MB     | 2.71%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 17.9MB      | 1.06%    | 179.5KB    | 206.9KB     | 0B        | 240.0KB    |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.6MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T17:47:10+00:00 - INFO [caliper-flow]: Generated report with path /home/james/Git/dissertation/hyperledger/caliper/report-20190625T174710.html 
+
+2019-06-25T17:47:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 75 Succ: 75 Fail:0 Unfinished:0 
+
+2019-06-25T17:47:10+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f network/fabric-v1.3/2org1peercouchdb/docker-compose.yaml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq);docker rmi $(docker images dev-* -q) 
+
+2019-06-25T17:47:10+00:00 - INFO [client-util.js]: Client exited  
+
+2019-06-25T17:47:22+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 2 succeeded, 1 failed #
+#######################################
+ 
+

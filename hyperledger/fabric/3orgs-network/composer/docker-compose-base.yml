@@ -46,7 +46,7 @@ services:
       - /var/run/:/host/var/run/
       - ./:/etc/hyperledger/configtx
       - ./peers/:/opt/gopath/src/github.com/hyperledger/fabric
-      - ./chaincodes/:/var/hyperledger/production/chaincodes
+      # - ./chaincodes/:/var/hyperledger/production/chaincodes
     command: peer node start
     ports:
       - '7051'

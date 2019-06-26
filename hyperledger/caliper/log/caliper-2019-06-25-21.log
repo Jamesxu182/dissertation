@@ -1,0 +1,65 @@
+2019-06-25T21:13:02+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T21:13:03+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T21:13:03+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-kafka-network/composer/docker-compose.yml up -d;sleep 10s 
+
+2019-06-25T21:13:17+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T21:13:17+00:00 - ERROR [composer.js]: composer.init() failed at initialiseFabric(),  
+
+2019-06-25T21:13:17+00:00 - ERROR [composer.js]: composer.init() failed,  
+
+2019-06-25T21:13:17+00:00 - ERROR [caliper-flow]: Error: TypeError: Cannot read property 'hosturl' of undefined
+    at Object.createChannels (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-composer/lib/composer_utils.js:85:74)
+    at Composer.initialiseFabric (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-composer/lib/composer.js:65:31)
+    at Composer.init (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-composer/lib/composer.js:48:21)
+    at Blockchain.init (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/blockchain.js:43:26)
+    at Object.module.exports.run (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/caliper-flow.js:70:27)
+    at <anonymous> 
+
+2019-06-25T21:13:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T21:13:17+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-kafka-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T21:13:28+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
+2019-06-25T21:17:56+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T21:17:56+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T21:17:56+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-kafka-network/composer/docker-compose.yml up -d;sleep 10s 
+
+2019-06-25T21:18:10+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T21:18:10+00:00 - ERROR [composer.js]: composer.init() failed at initialiseFabric(),  
+
+2019-06-25T21:18:10+00:00 - ERROR [composer.js]: composer.init() failed,  
+
+2019-06-25T21:18:10+00:00 - ERROR [caliper-flow]: Error: TypeError: Cannot read property 'hosturl' of undefined
+    at Object.createChannels (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-composer/lib/composer_utils.js:85:74)
+    at Composer.initialiseFabric (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-composer/lib/composer.js:65:31)
+    at Composer.init (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-composer/lib/composer.js:48:21)
+    at Blockchain.init (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/blockchain.js:43:26)
+    at Object.module.exports.run (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/caliper-flow.js:70:27)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) 
+
+2019-06-25T21:18:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T21:18:10+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-kafka-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T21:18:21+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+

@@ -3,11 +3,11 @@
     "composer": "^0.20.8"
   },
   "name": "business-network",
-  "version": "0.0.58",
+  "version": "0.0.59",
   "description": "business-network",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/$npm_package_name@$npm_package_version.bna",
-    "install": "composer network install --card PeerAdmin@hlfv1 --archiveFile ./dist/$npm_package_name@$npm_package_version.bna",
+    "installNetwork": "composer network install --card PeerAdmin@hlfv1 --archiveFile ./dist/$npm_package_name@$npm_package_version.bna",
     "upgrade": "composer network upgrade --card PeerAdmin@hlfv1 --networkName $npm_package_name --networkVersion $npm_package_version",
     "start": "composer network start --networkName $npm_package_name --networkVersion $npm_package_version --networkAdmin admin --networkAdminEnrollSecret adminpw --card PeerAdmin@hlfv1 --file networkadmin.card",
     "import": "composer card import --file networkadmin.card",
@@ -15,8 +15,8 @@
     "pretest": "npm run lint",
     "lint": "eslint .",
     "test": "mocha -t 0 test/*.js",
-    "deploy": "npm run prepublish && npm run install && npm run start && npm run import",
-    "redeploy": "npm run prepublish && npm run install && npm run upgrade"
+    "deploy": "npm run prepublish && npm run installNetwork && npm run start && npm run import",
+    "redeploy": "npm run prepublish && npm run installNetwork && npm run upgrade"
   },
   "keywords": [
     "composer",

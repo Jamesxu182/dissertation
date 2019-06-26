@@ -1,0 +1,2542 @@
+2019-06-25T19:00:11+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:00:11+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:00:11+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:00:16+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:00:19+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T19:00:32+00:00 - INFO [composer.js]: Composer deployment complete 
+
+2019-06-25T19:00:32+00:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2019-06-25T19:00:32+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:00:32+00:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2019-06-25T19:00:32+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:00:32+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:00:33+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":25}},"trim":0,"args":{"testAssets":500},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":500,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:00:33+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:00:33+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:00:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:00:33+00:00 - INFO [local-client.js]: Info: client 9006 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:00:33+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":25}}
+
+2019-06-25T19:00:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:00:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:00:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:00:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:00:38+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:00:39+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 24 Succ: 20 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:40+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 49 Succ: 40 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:41+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 74 Succ: 70 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:42+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 99 Succ: 90 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:43+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 124 Succ: 120 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:44+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 149 Succ: 140 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:45+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 174 Succ: 170 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:46+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 199 Succ: 190 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:47+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 224 Succ: 220 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:48+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 249 Succ: 240 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:49+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 274 Succ: 270 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:50+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 299 Succ: 290 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:51+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 324 Succ: 320 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:52+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 349 Succ: 340 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:53+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 374 Succ: 370 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:54+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 399 Succ: 390 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:55+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 424 Succ: 420 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:56+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 449 Succ: 440 Fail:0 Unfinished:9 
+
+2019-06-25T19:00:57+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 474 Succ: 470 Fail:0 Unfinished:4 
+
+2019-06-25T19:00:58+00:00 - DEBUG [report-builder]: r.create.max: 1561489258.128 r.create.min: 1561489238.169 r.final.max: 1561489258.194 r.final.min: 1561489238.629 r.final.last: 1561489258.194 
+
+2019-06-25T19:00:58+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 25.0 
+
+2019-06-25T19:00:58+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 500 
+
+2019-06-25T19:00:58+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:00:58+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:00:58+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:00:58+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 500  | 0    | 25.1 tps  | 0.46 s      | 0.06 s      | 0.25 s      | 25.0 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:00:58+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:00:58+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 101.6MB     | 73.1MB      | 10.21%   | 0.79%    | 462B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 106.6MB     | 92.6MB      | 76.29%   | 45.78%   | 3.4MB      | 3.5MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 78.4MB      | 71.7MB      | 65.21%   | 52.42%   | 11.5MB     | 31.8MB      | 4.0KB     | 4.7MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 138.0MB     | 132.1MB     | 119.74%  | 94.96%   | 3.1MB      | 3.9MB       | 0B        | 4.1MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.1MB      | 10.1MB      | 0.00%    | 0.00%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 22.0MB      | 19.3MB      | 7.98%    | 6.02%    | 3.6MB      | 3.6MB       | 0B        | 3.7MB      |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:00:58+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:00:58+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:00:58+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:00:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:01+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:02+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:03+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:01:03+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:01:03+00:00 - INFO [defaultTest]: ------ Test round 2 ------ 
+
+2019-06-25T19:01:03+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:01:03+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"testAssets":1000},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":1000,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":2,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:01:03+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:01:03+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:01:03+00:00 - INFO [local-client.js]: Info: client 9006 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:01:03+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#2
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-06-25T19:01:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:12+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 530 Succ: 520 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 580 Succ: 570 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:28+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 630 Succ: 620 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 680 Succ: 670 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 730 Succ: 720 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 780 Succ: 770 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 830 Succ: 820 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 880 Succ: 870 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 930 Succ: 920 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 980 Succ: 970 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1030 Succ: 1020 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1080 Succ: 1070 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:39+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1130 Succ: 1120 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:40+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1180 Succ: 1170 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:41+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1230 Succ: 1220 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:42+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1280 Succ: 1270 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:43+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1330 Succ: 1320 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:44+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1380 Succ: 1370 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:45+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1430 Succ: 1420 Fail:0 Unfinished:10 
+
+2019-06-25T19:01:46+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:46+00:00 - DEBUG [report-builder]: r.create.max: 1561489305.817 r.create.min: 1561489285.837 r.final.max: 1561489305.887 r.final.min: 1561489286.085 r.final.last: 1561489305.887 
+
+2019-06-25T19:01:46+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 49.9 
+
+2019-06-25T19:01:46+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 1000 
+
+2019-06-25T19:01:46+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:01:46+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:01:46+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:01:46+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 1000 | 0    | 50.1 tps  | 0.31 s      | 0.06 s      | 0.17 s      | 49.9 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:01:46+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:01:46+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 101.6MB     | 69.8MB      | 10.21%   | 0.29%    | 854B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 112.0MB     | 102.8MB     | 84.56%   | 53.23%   | 14.9MB     | 12.3MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 130.3MB     | 89.7MB      | 105.80%  | 67.35%   | 41.9MB     | 107.7MB     | 4.0KB     | 13.7MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 160.2MB     | 140.3MB     | 227.05%  | 119.48%  | 10.7MB     | 16.0MB      | 36.0KB    | 12.8MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.1MB      | 10.1MB      | 0.00%    | 0.00%    | 784B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 35.7MB      | 24.1MB      | 14.28%   | 5.81%    | 10.4MB     | 10.3MB      | 0B        | 10.8MB     |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:01:46+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:01:46+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:01:47+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:48+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:49+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:50+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:51+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:51+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:01:51+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:01:51+00:00 - INFO [defaultTest]: ------ Test round 3 ------ 
+
+2019-06-25T19:01:51+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:01:51+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":75}},"trim":0,"args":{"testAssets":1000},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":null,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":3,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:01:51+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:01:51+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:01:51+00:00 - INFO [local-client.js]: Info: client 9006 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:01:51+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#3
+	{"type":"fixed-rate","opts":{"tps":75}}
+
+2019-06-25T19:01:52+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:53+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:54+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:55+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:56+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:57+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:58+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:01:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:01+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:02+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:12+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:28+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:29+00:00 - INFO [local-client.js]: Client[9006] encountered an error: TypeError: this.blockchain.createNullDefaultTxStats is not a function
+    at CaliperLocalClient.doTest (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/client/caliper-local-client.js:255:40)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) 
+
+2019-06-25T19:02:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:29+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    Error: Client encountered error:TypeError: this.blockchain.createNullDefaultTxStats is not a function
+    at ChildProcess.<anonymous> (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/client/client-util.js:86:36)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at emit (internal/child_process.js:762:12)
+    at _combinedTickCallback (internal/process/next_tick.js:142:11)
+    at process._tickCallback (internal/process/next_tick.js:181:9) 
+
+2019-06-25T19:02:29+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:02:29+00:00 - INFO [defaultTest]: ------ Test round 4 ------ 
+
+2019-06-25T19:02:29+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:02:29+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"testAssets":2000},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":2000,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:02:29+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:02:29+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:02:29+00:00 - INFO [local-client.js]: Info: client 9006 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:02:29+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#4
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-06-25T19:02:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:38+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:39+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:40+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:41+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:02:42+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1500 Succ: 1500 Fail:0 Unfinished:0 
+
+2019-06-25T19:06:46+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:06:46+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:06:46+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:06:50+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:06:50+00:00 - ERROR [composer.js]: composer.init() failed at initialiseFabric(), 
+	{"code":1,"stdout":"","stderr":"\u001b[33m2019-06-25 19:06:50.737 UTC [main] InitCmd -> WARN 001\u001b[0m CORE_LOGGING_LEVEL is no longer supported, please use the FABRIC_LOGGING_SPEC environment variable\n\u001b[33m2019-06-25 19:06:50.741 UTC [main] SetOrdererEnv -> WARN 002\u001b[0m CORE_LOGGING_LEVEL is no longer supported, please use the FABRIC_LOGGING_SPEC environment variable\n\u001b[34m2019-06-25 19:06:50.742 UTC [channelCmd] InitCmdFactory -> INFO 003\u001b[0m Endorser and orderer connections initialized\nError: got unexpected status: BAD_REQUEST -- error applying config update to existing channel 'composerchannel': error authorizing update: error validating ReadSet: proposed update requires that key [Group]  /Channel/Application be at version 0, but it is currently at version 1\n"}
+
+2019-06-25T19:06:50+00:00 - ERROR [composer.js]: composer.init() failed, 
+	{"code":1,"stdout":"","stderr":"\u001b[33m2019-06-25 19:06:50.737 UTC [main] InitCmd -> WARN 001\u001b[0m CORE_LOGGING_LEVEL is no longer supported, please use the FABRIC_LOGGING_SPEC environment variable\n\u001b[33m2019-06-25 19:06:50.741 UTC [main] SetOrdererEnv -> WARN 002\u001b[0m CORE_LOGGING_LEVEL is no longer supported, please use the FABRIC_LOGGING_SPEC environment variable\n\u001b[34m2019-06-25 19:06:50.742 UTC [channelCmd] InitCmdFactory -> INFO 003\u001b[0m Endorser and orderer connections initialized\nError: got unexpected status: BAD_REQUEST -- error applying config update to existing channel 'composerchannel': error authorizing update: error validating ReadSet: proposed update requires that key [Group]  /Channel/Application be at version 0, but it is currently at version 1\n"}
+
+2019-06-25T19:06:50+00:00 - ERROR [caliper-flow]: Error: [object Object] 
+
+2019-06-25T19:06:50+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:06:50+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T19:07:01+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
+2019-06-25T19:07:47+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:07:48+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:07:48+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:07:52+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:07:56+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T19:08:09+00:00 - INFO [composer.js]: Composer deployment complete 
+
+2019-06-25T19:08:09+00:00 - ERROR [caliper-flow]: Could not start monitor, Error: Failed to find monitor in config file
+    at Monitor.start (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/monitor/monitor.js:116:35)
+    at Object.module.exports.run (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/caliper-flow.js:76:27)
+    at <anonymous> 
+
+2019-06-25T19:08:09+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:08:09+00:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2019-06-25T19:08:09+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:08:09+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:08:09+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":25}},"trim":0,"args":{"testAssets":50},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":50,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:08:09+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:08:09+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:08:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:10+00:00 - INFO [local-client.js]: Info: client 17164 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:08:10+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":25}}
+
+2019-06-25T19:08:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:12+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 24 Succ: 20 Fail:0 Unfinished:4 
+
+2019-06-25T19:08:15+00:00 - DEBUG [report-builder]: r.create.max: 1561489694.813 r.create.min: 1561489692.854 r.final.max: 1561489694.876 r.final.min: 1561489693.311 r.final.last: 1561489694.876 
+
+2019-06-25T19:08:15+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 24.7 
+
+2019-06-25T19:08:15+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 50 
+
+2019-06-25T19:08:15+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:08:15+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:08:15+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:08:15+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 50   | 0    | 25.5 tps  | 0.46 s      | 0.06 s      | 0.27 s      | 24.7 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:08:15+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:08:15+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:08:15+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:08:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:20+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:08:20+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:08:20+00:00 - INFO [defaultTest]: ------ Test round 2 ------ 
+
+2019-06-25T19:08:20+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:08:20+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"testAssets":100},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":100,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":2,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:08:20+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:08:20+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:08:20+00:00 - INFO [local-client.js]: Info: client 17164 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:08:20+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#2
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-06-25T19:08:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 50 Succ: 50 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 87 Succ: 80 Fail:0 Unfinished:7 
+
+2019-06-25T19:08:28+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 137 Succ: 130 Fail:0 Unfinished:7 
+
+2019-06-25T19:08:28+00:00 - DEBUG [report-builder]: r.create.max: 1561489708.332 r.create.min: 1561489706.352 r.final.max: 1561489708.397 r.final.min: 1561489706.602 r.final.last: 1561489708.397 
+
+2019-06-25T19:08:28+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 48.9 
+
+2019-06-25T19:08:28+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 100 
+
+2019-06-25T19:08:28+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:08:28+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:08:28+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:08:28+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 100  | 0    | 50.5 tps  | 0.28 s      | 0.06 s      | 0.16 s      | 48.9 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:08:28+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:08:28+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:08:28+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:08:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:33+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:08:33+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:08:33+00:00 - INFO [defaultTest]: ------ Test round 3 ------ 
+
+2019-06-25T19:08:33+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:08:33+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":75}},"trim":0,"args":{"testAssets":150},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":150,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":3,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:08:33+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:08:33+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:08:33+00:00 - INFO [local-client.js]: Info: client 17164 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:08:33+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#3
+	{"type":"fixed-rate","opts":{"tps":75}}
+
+2019-06-25T19:08:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:38+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:39+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:40+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:41+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:42+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 150 Succ: 150 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:43+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 222 Succ: 210 Fail:0 Unfinished:12 
+
+2019-06-25T19:08:43+00:00 - DEBUG [report-builder]: r.create.max: 1561489723.635 r.create.min: 1561489721.648 r.final.max: 1561489723.693 r.final.min: 1561489721.853 r.final.last: 1561489723.693 
+
+2019-06-25T19:08:43+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 73.3 
+
+2019-06-25T19:08:43+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 150 
+
+2019-06-25T19:08:43+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:08:43+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:08:43+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:08:43+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 150  | 0    | 75.5 tps  | 0.22 s      | 0.05 s      | 0.13 s      | 73.3 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:08:43+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:08:43+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:08:43+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:08:44+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:45+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:46+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:47+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:48+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:48+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:08:48+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:08:48+00:00 - INFO [defaultTest]: ------ Test round 4 ------ 
+
+2019-06-25T19:08:48+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:08:48+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"testAssets":200},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":200,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:08:48+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:08:48+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:08:48+00:00 - INFO [local-client.js]: Info: client 17164 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:08:48+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#4
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-06-25T19:08:49+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:50+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:51+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:52+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:53+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:54+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:55+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:56+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:57+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:58+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 300 Succ: 300 Fail:0 Unfinished:0 
+
+2019-06-25T19:08:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 330 Succ: 320 Fail:0 Unfinished:10 
+
+2019-06-25T19:09:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 430 Succ: 420 Fail:0 Unfinished:10 
+
+2019-06-25T19:09:00+00:00 - DEBUG [report-builder]: r.create.max: 1561489740.597 r.create.min: 1561489738.606 r.final.max: 1561489740.662 r.final.min: 1561489738.764 r.final.last: 1561489740.662 
+
+2019-06-25T19:09:00+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 97.3 
+
+2019-06-25T19:09:00+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 200 
+
+2019-06-25T19:09:00+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:09:00+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:09:00+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:09:00+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 200  | 0    | 100.5 tps | 0.18 s      | 0.06 s      | 0.12 s      | 97.3 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:09:00+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:09:00+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:09:00+00:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2019-06-25T19:09:00+00:00 - INFO [report-builder]: ###all test results:### 
+
+2019-06-25T19:09:00+00:00 - INFO [report-builder]: 
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | basic-sample-network | 50   | 0    | 25.5 tps  | 0.46 s      | 0.06 s      | 0.27 s      | 24.7 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | basic-sample-network | 100  | 0    | 50.5 tps  | 0.28 s      | 0.06 s      | 0.16 s      | 48.9 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 3    | basic-sample-network | 150  | 0    | 75.5 tps  | 0.22 s      | 0.05 s      | 0.13 s      | 73.3 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 4    | basic-sample-network | 200  | 0    | 100.5 tps | 0.18 s      | 0.06 s      | 0.12 s      | 97.3 tps   |
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:09:00+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:09:00+00:00 - INFO [caliper-flow]: Generated report with path /home/james/Git/dissertation/hyperledger/caliper/report-20190625T190900.html 
+
+2019-06-25T19:09:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 500 Succ: 500 Fail:0 Unfinished:0 
+
+2019-06-25T19:09:00+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T19:09:00+00:00 - INFO [client-util.js]: Client exited  
+
+2019-06-25T19:09:11+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 4 succeeded, 3 failed #
+#######################################
+ 
+
+2019-06-25T19:14:25+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:14:25+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:14:25+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:14:30+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:14:34+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T19:14:46+00:00 - INFO [composer.js]: Composer deployment complete 
+
+2019-06-25T19:14:46+00:00 - ERROR [caliper-flow]: Could not start monitor, Error: Failed to find monitor in config file
+    at Monitor.start (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/monitor/monitor.js:116:35)
+    at Object.module.exports.run (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/caliper-flow.js:76:27)
+    at <anonymous> 
+
+2019-06-25T19:14:46+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:14:46+00:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2019-06-25T19:14:46+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:14:47+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:14:47+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"testAssets":200},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":200,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:14:47+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:14:47+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:14:47+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:14:48+00:00 - INFO [local-client.js]: Info: client 21309 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:14:48+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-06-25T19:14:48+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:14:49+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:14:50+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:14:51+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 14 Succ: 10 Fail:0 Unfinished:4 
+
+2019-06-25T19:14:52+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 64 Succ: 60 Fail:0 Unfinished:4 
+
+2019-06-25T19:14:53+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 114 Succ: 110 Fail:0 Unfinished:4 
+
+2019-06-25T19:14:54+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 164 Succ: 160 Fail:0 Unfinished:4 
+
+2019-06-25T19:14:55+00:00 - DEBUG [report-builder]: r.create.max: 1561490095.191 r.create.min: 1561490091.21 r.final.max: 1561490095.252 r.final.min: 1561490091.488 r.final.last: 1561490095.252 
+
+2019-06-25T19:14:55+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 49.5 
+
+2019-06-25T19:14:55+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 200 
+
+2019-06-25T19:14:55+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:14:55+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:14:55+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:14:55+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 200  | 0    | 50.2 tps  | 0.28 s      | 0.06 s      | 0.16 s      | 49.5 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:14:55+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:14:55+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:14:55+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:14:55+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:14:56+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:14:57+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:14:58+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:14:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:00+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:15:00+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:15:00+00:00 - INFO [defaultTest]: ------ Test round 2 ------ 
+
+2019-06-25T19:15:00+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:15:00+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"testAssets":400},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":400,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":2,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:15:00+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:15:00+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:15:00+00:00 - INFO [local-client.js]: Info: client 21309 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:15:00+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#2
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-06-25T19:15:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:01+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:02+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 284 Succ: 270 Fail:0 Unfinished:14 
+
+2019-06-25T19:15:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 384 Succ: 370 Fail:0 Unfinished:14 
+
+2019-06-25T19:15:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 484 Succ: 470 Fail:0 Unfinished:14 
+
+2019-06-25T19:15:16+00:00 - DEBUG [report-builder]: r.create.max: 1561490116.627 r.create.min: 1561490112.637 r.final.max: 1561490116.686 r.final.min: 1561490112.795 r.final.last: 1561490116.686 
+
+2019-06-25T19:15:16+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 98.8 
+
+2019-06-25T19:15:16+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 400 
+
+2019-06-25T19:15:16+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:15:16+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:15:16+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:15:16+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 400  | 0    | 100.3 tps | 0.20 s      | 0.06 s      | 0.12 s      | 98.8 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:15:16+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:15:16+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:15:16+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:15:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:21+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:15:21+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:15:21+00:00 - INFO [defaultTest]: ------ Test round 3 ------ 
+
+2019-06-25T19:15:21+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:15:21+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"testAssets":600},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":600,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":3,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:15:21+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:15:21+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:15:21+00:00 - INFO [local-client.js]: Info: client 21309 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:15:21+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#3
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2019-06-25T19:15:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:28+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:38+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:39+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:40+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:41+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:42+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 725 Succ: 680 Fail:0 Unfinished:45 
+
+2019-06-25T19:15:43+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 876 Succ: 840 Fail:0 Unfinished:36 
+
+2019-06-25T19:15:44+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1029 Succ: 970 Fail:0 Unfinished:59 
+
+2019-06-25T19:15:45+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1178 Succ: 1120 Fail:0 Unfinished:58 
+
+2019-06-25T19:15:45+00:00 - DEBUG [report-builder]: r.create.max: 1561490145.077 r.create.min: 1561490141.083 r.final.max: 1561490145.274 r.final.min: 1561490141.23 r.final.last: 1561490145.274 
+
+2019-06-25T19:15:45+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 143.2 
+
+2019-06-25T19:15:45+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 600 
+
+2019-06-25T19:15:45+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:15:45+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:15:45+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:15:45+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 600  | 0    | 150.2 tps | 0.47 s      | 0.09 s      | 0.31 s      | 143.2 tps  |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:15:45+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:15:45+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:15:45+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:15:46+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:47+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:48+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:49+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:50+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:50+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:15:50+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:15:50+00:00 - INFO [defaultTest]: ------ Test round 4 ------ 
+
+2019-06-25T19:15:50+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:15:50+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"args":{"testAssets":800},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":800,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:15:50+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:15:50+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:15:50+00:00 - INFO [local-client.js]: Info: client 21309 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:15:50+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#4
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2019-06-25T19:15:51+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:52+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:53+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:54+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:55+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:56+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:57+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:58+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:15:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:01+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:02+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:12+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1331 Succ: 1220 Fail:0 Unfinished:111 
+
+2019-06-25T19:16:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1552 Succ: 1290 Fail:0 Unfinished:262 
+
+2019-06-25T19:16:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1764 Succ: 1340 Fail:0 Unfinished:424 
+
+2019-06-25T19:16:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1964 Succ: 1420 Fail:0 Unfinished:544 
+
+2019-06-25T19:16:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1610 Fail:0 Unfinished:390 
+
+2019-06-25T19:16:20+00:00 - DEBUG [report-builder]: r.create.max: 1561490177.876 r.create.min: 1561490173.861 r.final.max: 1561490179.824 r.final.min: 1561490174.246 r.final.last: 1561490179.824 
+
+2019-06-25T19:16:20+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 134.2 
+
+2019-06-25T19:16:20+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 800 
+
+2019-06-25T19:16:20+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:16:20+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:16:20+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:16:20+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 800  | 0    | 199.3 tps | 3.30 s      | 0.31 s      | 2.28 s      | 134.2 tps  |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:16:20+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:16:20+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:16:20+00:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2019-06-25T19:16:20+00:00 - INFO [report-builder]: ###all test results:### 
+
+2019-06-25T19:16:20+00:00 - INFO [report-builder]: 
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | basic-sample-network | 200  | 0    | 50.2 tps  | 0.28 s      | 0.06 s      | 0.16 s      | 49.5 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | basic-sample-network | 400  | 0    | 100.3 tps | 0.20 s      | 0.06 s      | 0.12 s      | 98.8 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 3    | basic-sample-network | 600  | 0    | 150.2 tps | 0.47 s      | 0.09 s      | 0.31 s      | 143.2 tps  |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 4    | basic-sample-network | 800  | 0    | 199.3 tps | 3.30 s      | 0.31 s      | 2.28 s      | 134.2 tps  |
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:16:20+00:00 - ERROR [monitor.js]: Failed to read monitoring data 
+
+2019-06-25T19:16:20+00:00 - INFO [caliper-flow]: Generated report with path /home/james/Git/dissertation/hyperledger/caliper/report-20190625T191620.html 
+
+2019-06-25T19:16:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-06-25T19:16:20+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T19:16:20+00:00 - INFO [client-util.js]: Client exited  
+
+2019-06-25T19:16:31+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 4 succeeded, 3 failed #
+#######################################
+ 
+
+2019-06-25T19:23:41+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:23:41+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:23:41+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:23:46+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:23:49+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T19:24:02+00:00 - INFO [composer.js]: Composer deployment complete 
+
+2019-06-25T19:24:02+00:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2019-06-25T19:24:02+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:24:02+00:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2019-06-25T19:24:02+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:24:02+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:24:03+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"testAssets":200},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":200,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:24:03+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:24:03+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:24:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:04+00:00 - INFO [local-client.js]: Info: client 24293 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:24:04+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-06-25T19:24:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 11 Succ: 0 Fail:0 Unfinished:11 
+
+2019-06-25T19:24:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 61 Succ: 50 Fail:0 Unfinished:11 
+
+2019-06-25T19:24:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 111 Succ: 100 Fail:0 Unfinished:11 
+
+2019-06-25T19:24:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 161 Succ: 150 Fail:0 Unfinished:11 
+
+2019-06-25T19:24:11+00:00 - DEBUG [report-builder]: r.create.max: 1561490651.065 r.create.min: 1561490647.084 r.final.max: 1561490651.119 r.final.min: 1561490647.359 r.final.last: 1561490651.119 
+
+2019-06-25T19:24:11+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 49.6 
+
+2019-06-25T19:24:11+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 200 
+
+2019-06-25T19:24:11+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:24:11+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:24:11+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:24:11+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 200  | 0    | 50.2 tps  | 0.28 s      | 0.05 s      | 0.17 s      | 49.6 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:24:11+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:24:11+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 100.4MB     | 83.0MB      | 10.24%   | 4.55%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 88.5MB      | 77.6MB      | 117.98%  | 66.22%   | 1.1MB      | 1.2MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 62.6MB      | 51.0MB      | 104.22%  | 61.04%   | 3.9MB      | 10.6MB      | 0B        | 1.6MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.1MB      | 10.1MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 16.5MB      | 14.5MB      | 14.88%   | 7.27%    | 1.2MB      | 1.2MB       | 0B        | 1.3MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 128.4MB     | 123.7MB     | 183.58%  | 104.73%  | 1.1MB      | 1.3MB       | 0B        | 1004.0KB   |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:24:11+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:24:11+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:24:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:12+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:16+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:24:16+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:24:16+00:00 - INFO [defaultTest]: ------ Test round 2 ------ 
+
+2019-06-25T19:24:16+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:24:16+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"testAssets":400},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":400,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":2,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:24:16+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:24:16+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:24:16+00:00 - INFO [local-client.js]: Info: client 24293 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:24:16+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#2
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-06-25T19:24:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 254 Succ: 240 Fail:0 Unfinished:14 
+
+2019-06-25T19:24:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 354 Succ: 340 Fail:0 Unfinished:14 
+
+2019-06-25T19:24:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 454 Succ: 440 Fail:0 Unfinished:14 
+
+2019-06-25T19:24:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:33+00:00 - DEBUG [report-builder]: r.create.max: 1561490672.8 r.create.min: 1561490668.81 r.final.max: 1561490672.874 r.final.min: 1561490668.985 r.final.last: 1561490672.874 
+
+2019-06-25T19:24:33+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 98.4 
+
+2019-06-25T19:24:33+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 400 
+
+2019-06-25T19:24:33+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:24:33+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:24:33+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:24:33+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 400  | 0    | 100.3 tps | 0.19 s      | 0.06 s      | 0.12 s      | 98.4 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:24:33+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:24:33+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 100.4MB     | 70.2MB      | 10.24%   | 1.21%    | 462B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 107.9MB     | 93.4MB      | 124.45%  | 52.17%   | 5.9MB      | 4.8MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 95.2MB      | 65.1MB      | 174.93%  | 59.63%   | 16.8MB     | 43.1MB      | 0B        | 5.6MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.1MB      | 10.1MB      | 0.00%    | 0.00%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 23.3MB      | 17.0MB      | 24.65%   | 5.11%    | 4.2MB      | 4.2MB       | 0B        | 4.4MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 140.2MB     | 129.1MB     | 368.99%  | 103.08%  | 4.4MB      | 6.5MB       | 0B        | 3.7MB      |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:24:33+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:24:33+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:24:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:38+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:38+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:24:38+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:24:38+00:00 - INFO [defaultTest]: ------ Test round 3 ------ 
+
+2019-06-25T19:24:38+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:24:38+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"testAssets":600},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":600,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":3,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:24:38+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:24:38+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:24:38+00:00 - INFO [local-client.js]: Info: client 24293 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:24:38+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#3
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2019-06-25T19:24:39+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:40+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:41+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:42+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:43+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:44+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:45+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:46+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:47+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:48+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:49+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:50+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:51+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:52+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:53+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:54+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:55+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:56+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:57+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:24:58+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 700 Succ: 670 Fail:0 Unfinished:30 
+
+2019-06-25T19:24:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 851 Succ: 790 Fail:0 Unfinished:61 
+
+2019-06-25T19:25:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 920 Fail:0 Unfinished:80 
+
+2019-06-25T19:25:01+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1152 Succ: 1070 Fail:0 Unfinished:82 
+
+2019-06-25T19:25:01+00:00 - DEBUG [report-builder]: r.create.max: 1561490701.442 r.create.min: 1561490697.448 r.final.max: 1561490701.74 r.final.min: 1561490697.607 r.final.last: 1561490701.74 
+
+2019-06-25T19:25:01+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 139.8 
+
+2019-06-25T19:25:01+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 600 
+
+2019-06-25T19:25:01+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:25:01+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:25:01+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:25:01+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 600  | 0    | 150.2 tps | 0.71 s      | 0.10 s      | 0.44 s      | 139.8 tps  |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:25:01+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:25:01+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 100.4MB     | 68.0MB      | 10.24%   | 0.63%    | 854B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 110.5MB     | 100.8MB     | 154.10%  | 52.04%   | 13.3MB     | 10.0MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 117.3MB     | 81.2MB      | 245.08%  | 66.84%   | 35.7MB     | 88.3MB      | 40.0KB    | 10.2MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.1MB      | 10.1MB      | 0.00%    | 0.00%    | 784B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 29.4MB      | 20.4MB      | 27.92%   | 4.55%    | 7.8MB      | 7.8MB       | 0B        | 8.3MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 157.1MB     | 135.5MB     | 615.21%  | 119.69%  | 9.5MB      | 14.7MB      | 0B        | 7.8MB      |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:25:01+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:25:01+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:25:02+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:06+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:25:06+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:25:06+00:00 - INFO [defaultTest]: ------ Test round 4 ------ 
+
+2019-06-25T19:25:06+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:25:06+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"args":{"testAssets":800},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/1org-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":800,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:25:06+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:25:06+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:25:07+00:00 - INFO [local-client.js]: Info: client 24293 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:25:07+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#4
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2019-06-25T19:25:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:12+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:28+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1282 Succ: 1200 Fail:0 Unfinished:82 
+
+2019-06-25T19:25:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1498 Succ: 1270 Fail:0 Unfinished:228 
+
+2019-06-25T19:25:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1700 Succ: 1340 Fail:0 Unfinished:360 
+
+2019-06-25T19:25:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1900 Succ: 1390 Fail:0 Unfinished:510 
+
+2019-06-25T19:25:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1490 Fail:0 Unfinished:510 
+
+2019-06-25T19:25:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1830 Fail:0 Unfinished:170 
+
+2019-06-25T19:25:37+00:00 - DEBUG [report-builder]: r.create.max: 1561490735.647 r.create.min: 1561490731.572 r.final.max: 1561490737.651 r.final.min: 1561490732.112 r.final.last: 1561490737.651 
+
+2019-06-25T19:25:37+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 131.6 
+
+2019-06-25T19:25:37+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 800 
+
+2019-06-25T19:25:37+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:25:37+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:25:37+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:25:37+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 800  | 0    | 196.3 tps | 3.44 s      | 0.43 s      | 2.30 s      | 131.6 tps  |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:25:37+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:25:37+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 100.4MB     | 67.0MB      | 10.24%   | 0.39%    | 854B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 119.0MB     | 105.4MB     | 170.12%  | 52.29%   | 24.9MB     | 18.2MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 153.8MB     | 97.6MB      | 259.54%  | 72.86%   | 66.4MB     | 167.7MB     | 40.0KB    | 17.9MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.1MB      | 10.1MB      | 0.00%    | 0.00%    | 784B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 41.4MB      | 24.7MB      | 27.92%   | 3.93%    | 13.9MB     | 14.0MB      | 0B        | 15.1MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 174.8MB     | 143.5MB     | 680.80%  | 136.93%  | 18.1MB     | 27.9MB      | 0B        | 15.8MB     |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:25:37+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:25:37+00:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2019-06-25T19:25:37+00:00 - INFO [report-builder]: ###all test results:### 
+
+2019-06-25T19:25:37+00:00 - INFO [report-builder]: 
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | basic-sample-network | 200  | 0    | 50.2 tps  | 0.28 s      | 0.05 s      | 0.17 s      | 49.6 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | basic-sample-network | 400  | 0    | 100.3 tps | 0.19 s      | 0.06 s      | 0.12 s      | 98.4 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 3    | basic-sample-network | 600  | 0    | 150.2 tps | 0.71 s      | 0.10 s      | 0.44 s      | 139.8 tps  |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 4    | basic-sample-network | 800  | 0    | 196.3 tps | 3.44 s      | 0.43 s      | 2.30 s      | 131.6 tps  |
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:25:37+00:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2019-06-25T19:25:37+00:00 - INFO [monitor.js]: 
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 100.4MB     | 10.24%   | 854B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 119.0MB     | 170.12%  | 24.9MB     | 18.2MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 153.8MB     | 259.54%  | 66.4MB     | 167.7MB     | 40.0KB    | 17.9MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.1MB      | 0.00%    | 784B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 41.4MB      | 27.92%   | 13.9MB     | 14.0MB      | 0B        | 15.1MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb                           | 174.8MB     | 680.80%  | 18.1MB     | 27.9MB      | 0B        | 15.8MB     |
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:25:37+00:00 - INFO [caliper-flow]: Generated report with path /home/james/Git/dissertation/hyperledger/caliper/report-20190625T192537.html 
+
+2019-06-25T19:25:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-06-25T19:25:37+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/1org-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T19:25:37+00:00 - INFO [client-util.js]: Client exited  
+
+2019-06-25T19:25:49+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 4 succeeded, 3 failed #
+#######################################
+ 
+
+2019-06-25T19:46:23+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:46:23+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:46:23+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3org-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:46:26+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:46:27+00:00 - ERROR [composer.js]: composer.init() failed at initialiseFabric(), 
+	{"code":1,"stdout":"","stderr":"Error: No such container: peer0.org1.example.com\n"}
+
+2019-06-25T19:46:27+00:00 - ERROR [composer.js]: composer.init() failed, 
+	{"code":1,"stdout":"","stderr":"Error: No such container: peer0.org1.example.com\n"}
+
+2019-06-25T19:46:27+00:00 - ERROR [caliper-flow]: Error: [object Object] 
+
+2019-06-25T19:46:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:46:27+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3org-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T19:46:27+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
+2019-06-25T19:47:10+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:47:10+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:47:10+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3orgs-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:47:16+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:47:20+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T19:47:21+00:00 - ERROR [composer_utils.js]: Composer runtime install failed, Error: Error trying install business network. Error: The business network is already installed on all the peers
+    at HLFConnection.install (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:602:30)
+    at <anonymous> 
+
+2019-06-25T19:47:21+00:00 - ERROR [composer.js]: composer.installSmartContract() failed,  
+
+2019-06-25T19:47:21+00:00 - ERROR [caliper-flow]: Error: Error: Error: Error trying install business network. Error: The business network is already installed on all the peers
+    at Object.runtimeInstall (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-composer/lib/composer_utils.js:381:15)
+    at <anonymous> 
+
+2019-06-25T19:47:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:47:21+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3orgs-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T19:47:32+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
+2019-06-25T19:48:42+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:48:43+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:48:43+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3orgs-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:48:48+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:48:53+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T19:48:53+00:00 - ERROR [composer_utils.js]: Composer runtime install failed, Error: Error trying install business network. Error: The business network is already installed on all the peers
+    at HLFConnection.install (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:602:30)
+    at <anonymous> 
+
+2019-06-25T19:48:53+00:00 - ERROR [composer.js]: composer.installSmartContract() failed,  
+
+2019-06-25T19:48:53+00:00 - ERROR [caliper-flow]: Error: Error: Error: Error trying install business network. Error: The business network is already installed on all the peers
+    at Object.runtimeInstall (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-composer/lib/composer_utils.js:381:15)
+    at <anonymous> 
+
+2019-06-25T19:48:53+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:48:53+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3orgs-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T19:49:04+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 0 succeeded, 0 failed #
+#######################################
+ 
+
+2019-06-25T19:50:28+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:50:28+00:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-06-25T19:50:28+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3orgs-network/composer/docker-compose.yml up -d;sleep 3s 
+
+2019-06-25T19:50:34+00:00 - INFO [composer.js]: Initializing target platform configuration 
+
+2019-06-25T19:50:38+00:00 - INFO [composer.js]: Deploying Composer 
+
+2019-06-25T19:51:57+00:00 - INFO [composer.js]: Composer deployment complete 
+
+2019-06-25T19:51:57+00:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2019-06-25T19:51:57+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:51:57+00:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2019-06-25T19:51:57+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:51:57+00:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-06-25T19:51:58+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":50}},"trim":0,"args":{"testAssets":200},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/3orgs-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":200,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":1,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:51:58+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:51:58+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:51:58+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:51:58+00:00 - INFO [local-client.js]: Info: client 14103 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:51:58+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":50}}
+
+2019-06-25T19:51:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:01+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:02+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 11 Succ: 0 Fail:0 Unfinished:11 
+
+2019-06-25T19:52:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 61 Succ: 50 Fail:0 Unfinished:11 
+
+2019-06-25T19:52:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 111 Succ: 100 Fail:0 Unfinished:11 
+
+2019-06-25T19:52:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 161 Succ: 150 Fail:0 Unfinished:11 
+
+2019-06-25T19:52:06+00:00 - DEBUG [report-builder]: r.create.max: 1561492326.008 r.create.min: 1561492322.028 r.final.max: 1561492326.075 r.final.min: 1561492322.323 r.final.last: 1561492326.075 
+
+2019-06-25T19:52:06+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 49.4 
+
+2019-06-25T19:52:06+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 200 
+
+2019-06-25T19:52:06+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:52:06+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:52:06+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:52:06+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 200  | 0    | 50.3 tps  | 0.35 s      | 0.07 s      | 0.20 s      | 49.4 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:52:06+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:52:06+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 100.7MB     | 83.7MB      | 8.64%    | 2.16%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 102.0MB     | 77.0MB      | 9.18%    | 2.30%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 67.3MB      | 67.3MB      | 0.01%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 87.3MB      | 74.3MB      | 125.45%  | 56.64%   | 1.1MB      | 1.1MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 89.1MB      | 76.2MB      | 127.48%  | 59.42%   | 1.1MB      | 1.1MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 87.1MB      | 75.1MB      | 121.96%  | 58.42%   | 1.1MB      | 1.1MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org3.example.com            | 409.3MB     | 406.3MB     | 110.00%  | 52.94%   | 4.0MB      | 17.1MB      | 0B        | 1.7MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 513.9MB     | 510.9MB     | 105.01%  | 52.10%   | 3.9MB      | 17.0MB      | 0B        | 1.7MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 71.1MB      | 55.4MB      | 103.80%  | 52.97%   | 4.0MB      | 17.1MB      | 0B        | 1.7MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org3.example.com          | 126.7MB     | 122.1MB     | 219.92%  | 100.42%  | 1.1MB      | 1.3MB       | 0B        | 688.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.4MB      | 10.4MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 132.9MB     | 124.7MB     | 212.57%  | 101.05%  | 1.1MB      | 1.3MB       | 0B        | 688.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org3.example.com               | 10.2MB      | 10.2MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 128.2MB     | 123.2MB     | 202.68%  | 100.78%  | 1.1MB      | 1.3MB       | 0B        | 672.0KB    |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 18.0MB      | 15.8MB      | 15.09%   | 7.38%    | 1.4MB      | 4.0MB       | 0B        | 1.4MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.7MB      | 10.7MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:52:06+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:52:06+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:52:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:11+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:52:11+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:52:11+00:00 - INFO [defaultTest]: ------ Test round 2 ------ 
+
+2019-06-25T19:52:11+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:52:11+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":100}},"trim":0,"args":{"testAssets":400},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/3orgs-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":400,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":2,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:52:11+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:52:11+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:52:11+00:00 - INFO [local-client.js]: Info: client 14103 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:52:11+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#2
+	{"type":"fixed-rate","opts":{"tps":100}}
+
+2019-06-25T19:52:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:12+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 200 Succ: 200 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 255 Succ: 220 Fail:0 Unfinished:35 
+
+2019-06-25T19:52:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 355 Succ: 260 Fail:0 Unfinished:95 
+
+2019-06-25T19:52:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 460 Succ: 290 Fail:0 Unfinished:170 
+
+2019-06-25T19:52:28+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 562 Succ: 320 Fail:0 Unfinished:242 
+
+2019-06-25T19:52:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 420 Fail:0 Unfinished:180 
+
+2019-06-25T19:52:29+00:00 - DEBUG [report-builder]: r.create.max: 1561492347.803 r.create.min: 1561492343.774 r.final.max: 1561492349.007 r.final.min: 1561492344.113 r.final.last: 1561492349.007 
+
+2019-06-25T19:52:29+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 76.4 
+
+2019-06-25T19:52:29+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 400 
+
+2019-06-25T19:52:29+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:52:29+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:52:29+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:52:29+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 400  | 0    | 99.3 tps  | 2.95 s      | 0.25 s      | 1.81 s      | 76.4 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:52:29+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:52:29+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 100.7MB     | 71.3MB      | 8.64%    | 0.58%    | 210B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 102.0MB     | 70.9MB      | 9.18%    | 0.61%    | 210B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 67.3MB      | 67.3MB      | 0.01%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 108.1MB     | 83.3MB      | 148.69%  | 40.64%   | 4.0MB      | 3.9MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 108.0MB     | 84.5MB      | 159.66%  | 42.32%   | 4.0MB      | 3.8MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 108.8MB     | 92.4MB      | 163.41%  | 52.78%   | 5.6MB      | 4.5MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org3.example.com            | 412.5MB     | 409.2MB     | 156.02%  | 41.32%   | 14.2MB     | 46.4MB      | 0B        | 4.3MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 517.2MB     | 513.8MB     | 163.37%  | 41.71%   | 14.0MB     | 48.2MB      | 0B        | 4.5MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 100.6MB     | 71.9MB      | 159.97%  | 54.26%   | 16.5MB     | 47.3MB      | 0B        | 4.1MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org3.example.com          | 142.9MB     | 127.6MB     | 379.27%  | 88.93%   | 3.8MB      | 4.8MB       | 0B        | 2.8MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.4MB      | 10.4MB      | 0.00%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 145.0MB     | 130.3MB     | 379.23%  | 89.78%   | 3.8MB      | 4.9MB       | 0B        | 2.8MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org3.example.com               | 10.2MB      | 10.2MB      | 0.00%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 145.5MB     | 129.2MB     | 392.29%  | 103.21%  | 4.2MB      | 6.2MB       | 0B        | 2.6MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 25.0MB      | 18.6MB      | 19.94%   | 4.49%    | 4.5MB      | 13.0MB      | 0B        | 4.7MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.7MB      | 10.7MB      | 0.00%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:52:29+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:52:29+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:52:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:34+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:52:34+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:52:34+00:00 - INFO [defaultTest]: ------ Test round 3 ------ 
+
+2019-06-25T19:52:34+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:52:34+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":150}},"trim":0,"args":{"testAssets":600},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/3orgs-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":600,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":3,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:52:34+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:52:34+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:52:34+00:00 - INFO [local-client.js]: Info: client 14103 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:52:34+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#3
+	{"type":"fixed-rate","opts":{"tps":150}}
+
+2019-06-25T19:52:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:37+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:38+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:39+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:40+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:41+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:42+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:43+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:44+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:45+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:46+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:47+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:48+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:49+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:50+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:51+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:52+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:53+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:54+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 600 Succ: 600 Fail:0 Unfinished:0 
+
+2019-06-25T19:52:55+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 820 Succ: 620 Fail:0 Unfinished:200 
+
+2019-06-25T19:52:56+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 972 Succ: 630 Fail:0 Unfinished:342 
+
+2019-06-25T19:52:57+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1122 Succ: 640 Fail:0 Unfinished:482 
+
+2019-06-25T19:52:58+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 650 Fail:0 Unfinished:550 
+
+2019-06-25T19:52:59+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 650 Fail:0 Unfinished:550 
+
+2019-06-25T19:53:00+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 920 Fail:0 Unfinished:280 
+
+2019-06-25T19:53:01+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:01+00:00 - DEBUG [report-builder]: r.create.max: 1561492377.776 r.create.min: 1561492373.785 r.final.max: 1561492381.387 r.final.min: 1561492374.623 r.final.last: 1561492381.387 
+
+2019-06-25T19:53:01+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 78.9 
+
+2019-06-25T19:53:01+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 600 
+
+2019-06-25T19:53:01+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:53:01+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:53:01+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:53:01+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 600  | 0    | 150.3 tps | 5.50 s      | 0.73 s      | 4.25 s      | 78.9 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:53:01+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:53:01+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 100.7MB     | 69.1MB      | 8.64%    | 0.29%    | 532B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 102.0MB     | 69.8MB      | 9.18%    | 0.31%    | 532B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 67.3MB      | 67.3MB      | 0.01%    | 0.00%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 115.9MB     | 91.9MB      | 161.98%  | 34.92%   | 8.7MB      | 8.3MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 115.4MB     | 93.3MB      | 164.30%  | 35.04%   | 8.7MB      | 8.3MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 120.2MB     | 101.7MB     | 163.41%  | 49.69%   | 13.5MB     | 10.2MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org3.example.com            | 419.8MB     | 412.4MB     | 162.81%  | 42.88%   | 32.2MB     | 116.0MB     | 0B        | 11.0MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 524.2MB     | 516.9MB     | 163.37%  | 41.86%   | 32.1MB     | 110.4MB     | 0B        | 11.1MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 141.9MB     | 92.5MB      | 159.97%  | 60.60%   | 39.9MB     | 124.3MB     | 0B        | 11.4MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org3.example.com          | 175.8MB     | 137.1MB     | 438.10%  | 104.16%  | 9.3MB      | 11.5MB      | 0B        | 7.9MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.4MB      | 10.4MB      | 0.42%    | 0.01%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 171.9MB     | 138.9MB     | 446.34%  | 102.47%  | 9.2MB      | 11.5MB      | 0B        | 7.6MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org3.example.com               | 10.2MB      | 10.2MB      | 0.00%    | 0.00%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 167.0MB     | 138.7MB     | 441.80%  | 125.44%  | 10.8MB     | 15.7MB      | 0B        | 7.4MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 38.5MB      | 23.4MB      | 28.19%   | 4.32%    | 10.4MB     | 30.6MB      | 0B        | 11.0MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.7MB      | 10.7MB      | 0.00%    | 0.00%    | 392B       | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:53:01+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:53:01+00:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-06-25T19:53:02+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:03+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:04+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:05+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:06+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:06+00:00 - ERROR [defaultTest]: ------ Failed 'basic-sample-network' testing with the following error ------
+    TypeError: Cannot read property 'restart' of undefined
+    at DefaultTest.runTestRounds (/home/james/.nvm/versions/node/v8.16.0/lib/node_modules/caliper-cli/node_modules/caliper-core/lib/test/defaultTest.js:135:40)
+    at <anonymous> 
+
+2019-06-25T19:53:06+00:00 - INFO [defaultTest]: ####### Testing 'basic-sample-network' ####### 
+
+2019-06-25T19:53:06+00:00 - INFO [defaultTest]: ------ Test round 4 ------ 
+
+2019-06-25T19:53:06+00:00 - INFO [client-util.js]: All clients ready, starting test phase 
+
+2019-06-25T19:53:06+00:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"basic-sample-network","rateControl":{"type":"fixed-rate","opts":{"tps":200}},"trim":0,"args":{"testAssets":800},"cb":"benchmark/composer/composer-samples/basic-sample-network.js","config":"/home/james/Git/dissertation/hyperledger/fabric/3orgs-network/composer/composer.json","root":"/home/james/Git/dissertation/hyperledger/caliper","numb":800,"txFile":{"roundLength":1,"roundCurrent":0,"readWrite":"no"},"roundIdx":4,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-06-25T19:53:06+00:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-06-25T19:53:06+00:00 - INFO [composer.js]: getting  context for:  basic-sample-network 
+
+2019-06-25T19:53:06+00:00 - INFO [local-client.js]: Info: client 14103 start test runFixedNumber():Basic Sample Network Performance Test 
+
+2019-06-25T19:53:06+00:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#4
+	{"type":"fixed-rate","opts":{"tps":200}}
+
+2019-06-25T19:53:07+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:08+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:09+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:10+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:11+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:12+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:13+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:14+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:15+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:16+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:17+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:18+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:19+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:20+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:21+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:22+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:23+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:24+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:25+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:26+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:27+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:28+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:29+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:30+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1200 Succ: 1200 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:31+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1236 Succ: 1200 Fail:0 Unfinished:36 
+
+2019-06-25T19:53:32+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1436 Succ: 1200 Fail:0 Unfinished:236 
+
+2019-06-25T19:53:33+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1654 Succ: 1200 Fail:0 Unfinished:454 
+
+2019-06-25T19:53:34+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1654 Succ: 1200 Fail:0 Unfinished:454 
+
+2019-06-25T19:53:35+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1900 Succ: 1210 Fail:0 Unfinished:690 
+
+2019-06-25T19:53:36+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1220 Fail:0 Unfinished:780 
+
+2019-06-25T19:53:38+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1220 Fail:0 Unfinished:780 
+
+2019-06-25T19:53:39+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1230 Fail:0 Unfinished:770 
+
+2019-06-25T19:53:40+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1240 Fail:0 Unfinished:760 
+
+2019-06-25T19:53:41+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 1550 Fail:0 Unfinished:450 
+
+2019-06-25T19:53:41+00:00 - DEBUG [report-builder]: r.create.max: 1561492415.705 r.create.min: 1561492411.448 r.final.max: 1561492421.671 r.final.min: 1561492414.513 r.final.last: 1561492421.671 
+
+2019-06-25T19:53:41+00:00 - DEBUG [report-builder]:  throughput for only success time computed: 78.3 
+
+2019-06-25T19:53:41+00:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 800 
+
+2019-06-25T19:53:41+00:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-06-25T19:53:41+00:00 - DEBUG [report-builder]: invokeLantency: 0ms 
+
+2019-06-25T19:53:41+00:00 - INFO [report-builder]: ###test result:### 
+
+2019-06-25T19:53:41+00:00 - INFO [report-builder]: 
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| basic-sample-network | 800  | 0    | 187.9 tps | 7.79 s      | 2.97 s      | 6.81 s      | 78.3 tps   |
++----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:53:41+00:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-06-25T19:53:41+00:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 100.7MB     | 68.3MB      | 8.64%    | 0.19%    | 602B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 102.0MB     | 69.4MB      | 9.18%    | 0.20%    | 532B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 67.3MB      | 67.3MB      | 0.01%    | 0.00%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 130.6MB     | 99.3MB      | 164.79%  | 35.80%   | 14.6MB     | 13.9MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 125.9MB     | 100.5MB     | 164.30%  | 34.76%   | 14.6MB     | 13.9MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 134.5MB     | 107.6MB     | 189.24%  | 52.94%   | 24.1MB     | 17.7MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org3.example.com            | 430.1MB     | 416.1MB     | 181.67%  | 43.77%   | 55.1MB     | 229.3MB     | 0B        | 22.1MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 534.4MB     | 520.6MB     | 194.60%  | 44.80%   | 55.0MB     | 224.4MB     | 0B        | 21.8MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 190.4MB     | 114.6MB     | 210.12%  | 66.66%   | 70.5MB     | 249.5MB     | 0B        | 22.6MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org3.example.com          | 212.6MB     | 148.9MB     | 523.79%  | 110.35%  | 16.9MB     | 20.6MB      | 0B        | 16.4MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.4MB      | 10.4MB      | 0.42%    | 0.01%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 196.1MB     | 149.6MB     | 536.93%  | 109.87%  | 17.0MB     | 20.7MB      | 0B        | 17.8MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org3.example.com               | 10.2MB      | 10.2MB      | 0.00%    | 0.00%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 198.9MB     | 149.4MB     | 521.33%  | 135.03%  | 20.0MB     | 28.9MB      | 0B        | 19.1MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 54.7MB      | 29.9MB      | 28.19%   | 3.76%    | 17.3MB     | 51.0MB      | 0B        | 18.4MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.7MB      | 10.7MB      | 0.00%    | 0.00%    | 392B       | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:53:41+00:00 - INFO [defaultTest]: ------ Passed 'basic-sample-network' testing ------ 
+
+2019-06-25T19:53:41+00:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2019-06-25T19:53:41+00:00 - INFO [report-builder]: ###all test results:### 
+
+2019-06-25T19:53:41+00:00 - INFO [report-builder]: 
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name                 | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | basic-sample-network | 200  | 0    | 50.3 tps  | 0.35 s      | 0.07 s      | 0.20 s      | 49.4 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | basic-sample-network | 400  | 0    | 99.3 tps  | 2.95 s      | 0.25 s      | 1.81 s      | 76.4 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 3    | basic-sample-network | 600  | 0    | 150.3 tps | 5.50 s      | 0.73 s      | 4.25 s      | 78.9 tps   |
+|------|----------------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 4    | basic-sample-network | 800  | 0    | 187.9 tps | 7.79 s      | 2.97 s      | 6.81 s      | 78.3 tps   |
++------+----------------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-06-25T19:53:41+00:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2019-06-25T19:53:41+00:00 - INFO [monitor.js]: 
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 100.7MB     | 8.64%    | 602B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 102.0MB     | 9.18%    | 532B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 67.3MB      | 0.01%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...0.1.0 | 130.6MB     | 164.79%  | 14.6MB     | 13.9MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org3.example.co...0.1.0 | 125.9MB     | 164.30%  | 14.6MB     | 13.9MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...0.1.0 | 134.5MB     | 189.24%  | 24.1MB     | 17.7MB      | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org3.example.com            | 430.1MB     | 181.67%  | 55.1MB     | 229.3MB     | 0B        | 22.1MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 534.4MB     | 194.60%  | 55.0MB     | 224.4MB     | 0B        | 21.8MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 190.4MB     | 210.12%  | 70.5MB     | 249.5MB     | 0B        | 22.6MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org3.example.com          | 212.6MB     | 523.79%  | 16.9MB     | 20.6MB      | 0B        | 16.4MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 10.4MB      | 0.42%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org2.example.com          | 196.1MB     | 536.93%  | 17.0MB     | 20.7MB      | 0B        | 17.8MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org3.example.com               | 10.2MB      | 0.00%    | 392B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | couchdb.org1.example.com          | 198.9MB     | 521.33%  | 20.0MB     | 28.9MB      | 0B        | 19.1MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 54.7MB      | 28.19%   | 17.3MB     | 51.0MB      | 0B        | 18.4MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.7MB      | 0.00%    | 392B       | 0B          | 0B        | 0B         |
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-06-25T19:53:42+00:00 - INFO [caliper-flow]: Generated report with path /home/james/Git/dissertation/hyperledger/caliper/report-20190625T195341.html 
+
+2019-06-25T19:53:42+00:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-06-25T19:53:42+00:00 - INFO [caliper-utils]: Executing command: cd /home/james/Git/dissertation/hyperledger/caliper;docker-compose -f ../fabric/3orgs-network/composer/docker-compose.yml down;(test -z "$(docker ps -aq)") || docker rm $(docker ps -aq) 
+
+2019-06-25T19:53:42+00:00 - INFO [client-util.js]: Client exited  
+
+2019-06-25T19:53:53+00:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 4 succeeded, 3 failed #
+#######################################
+ 
+

@@ -1,0 +1,80 @@
+{
+  "caliper": {
+    "blockchain": "composer",
+    "command" : {
+      "start": "docker-compose -f ../fabric/1org-network/composer/docker-compose.yml up -d;sleep 3s",
+      "end": "docker-compose -f ../fabric/1org-network/composer/docker-compose.yml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq)"
+    }
+  },
+  "composer": {
+    "chaincodes": [
+      {"id": "basic-sample-network", "version": "0.1.0", "path": "src/contract/composer", "orgs": ["Org1"], "loglevel": "INFO"},
+      {"id": "vehicle-lifecycle-network", "version": "0.1.0", "path": "src/contract/composer", "orgs": ["Org1"], "loglevel": "INFO"}
+    ],
+    "cryptodir": "../fabric/1org-network/composer/crypto-config",
+    "network": {
+      "x-type" : "hlfv1",
+      "timeout": 3000,
+      "version": "1.0.0",
+      "tls": false,
+      "orderers": {
+        "orderer.example.com": {
+          "url": "grpc://localhost:7050",
+          "mspid": "OrdererMSP",
+          "mspconfig": "/etc/hyperledger/msp/orderer/tls/ca.crt",
+          "hostname": "orderer.example.com",
+          "hosturl": "orderer.example.com:7050"
+        }
+      },
+      "certificateAuthorities": {
+        "ca.org1.example.com": {
+          "url": "http://localhost:7054",
+          "name": "ca.org1.example.com"
+        }
+      },
+      "organizations": [
+        {
+          "name": "Org1",
+          "mspid": "Org1MSP",
+          "mspconfig": "/etc/hyperledger/msp/users/Admin@org1.example.com/msp",
+          "adminCert": "../fabric/1org-network/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem",
+          "adminKey" : "../fabric/1org-network/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/595c3f8c717211a590148b35f034ce8e8864321f80f7808122fc5b5baa899742_sk",
+          "certificateAuthorities": [
+            "ca.org1.example.com"
+          ],
+          "peers": [
+            "peer0.org1.example.com"
+          ]
+        }
+      ],
+      "peers": {
+        "peer0.org1.example.com": {
+          "url": "grpc://localhost:7051",
+          "eventUrl": "grpc://localhost:7053",
+          "hostname": "peer0.org1.example.com",
+          "channels":[
+            "composerchannel"
+          ]
+        }
+      },
+      "channels": {
+        "composerchannel": {
+          "config": "/etc/hyperledger/configtx/composer-channel.tx",
+          "mspconfig": "/etc/hyperledger/msp/users/Admin@org1.example.com/msp",
+          "orderers": [
+            "orderer.example.com"
+          ],
+          "peers": [
+            "peer0.org1.example.com"
+          ]
+        }
+      }
+    }
+  },
+  "info" : {
+    "Version": "1.4.1",
+    "Size": "1 Orgs with 1 Peer",
+    "Orderer": "Solo",
+    "Distribution": "Single Host"
+  }
+}

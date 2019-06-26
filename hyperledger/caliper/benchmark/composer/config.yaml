@@ -1,0 +1,64 @@
+---
+test:
+  name: Composer Performance test
+  description: This is an example Composer perf test
+  clients:
+    type: local
+    number: 1
+  rounds:
+  - label: basic-sample-network
+    txNumber:
+    - 200
+    trim: 0
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 50
+    arguments:
+      testAssets: 200
+    callback: benchmark/composer/composer-samples/basic-sample-network.js
+  - label: basic-sample-network
+    txNumber:
+    - 400
+    trim: 0
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 100
+    arguments:
+      testAssets: 400
+    callback: benchmark/composer/composer-samples/basic-sample-network.js
+  - label: basic-sample-network
+    txNumber:
+    - 600
+    trim: 0
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 150
+    arguments:
+      testAssets: 600
+    callback: benchmark/composer/composer-samples/basic-sample-network.js
+  - label: basic-sample-network
+    txNumber:
+    - 800
+    trim: 0
+    rateControl:
+    - type: fixed-rate
+      opts:
+        tps: 200
+    arguments:
+      testAssets: 800
+    callback: benchmark/composer/composer-samples/basic-sample-network.js
+monitor:
+  type:
+  - docker
+  - process
+  docker:
+    name:
+    - all
+  process:
+  - command: node
+    arguments: local-client.js
+    multiOutput: avg
+interval: 1
